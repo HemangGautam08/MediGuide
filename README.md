@@ -47,26 +47,12 @@ Both are trained on medical instruction datasets, and evaluated on response qual
 
 ## 3. Datasets
 
-### Dataset 1: Full-scale (Used for QLoRA)
-
 - **Source**: [`Mohammed-Altaf/medical-instruction-120k`](https://huggingface.co/datasets/Mohammed-Altaf/medical-instruction-120k)
 - **Size**: ~120,000 examples
 - **Processing**:
   - Extract instructions from `[|Human|]` to `[|AI|]`
   - Extract response from the last `[|AI|]` onward
 - **Split**: Predefined train/dev/test
-
-### Dataset 2: Sampled Subset (Used for Prompt Tuning)
-
-- **File**: `sampled_6000.json`
-- **Size**: 6,000 interactions
-- **Structure**:
-  ```json
-  {
-    "instruction": "As a doctor, answer medical questions",
-    "input": "Patient symptom description...",
-    "output": "Doctor response..."
-  }
 
 ### Comparative Score Summary
 
