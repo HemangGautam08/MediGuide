@@ -26,13 +26,13 @@ export class ChatService {
         if (Array.isArray(result.data)) {
           return result.data[0] || 'No response received';
         }
-        // if (typeof result.data === 'string') {
-        //   return result.data;
-        // }
-        // if (typeof result.data === 'object' && result.data.response) {
-        //   return result.data.response;
-        // }
-        // return JSON.stringify(result.data);
+        if (typeof result.data === 'string') {
+          return result.data;
+        }
+        if (typeof result.data === 'object' && result.data.response) {
+          return result.data.response;
+        }
+        return JSON.stringify(result.data);
       }
 
       return 'No response received from the model';
