@@ -3,8 +3,8 @@ import { AI_MODELS } from './models/models'; // assuming models are imported her
 
 // Gradio endpoints for different models
 const GRADIO_ENDPOINTS = {
-  'mistralai': 'https://675d7436e0ad38cdc0.gradio.live',
-  'deepseekai': 'https://675d7436e0ad38cdc0.gradio.live'
+  'mistralai': 'https://902582614614ec4586.gradio.live',
+  'deepseekai': 'https://078386c1ae983520fa.gradio.live'
 };
 
 export class ChatService {
@@ -17,7 +17,7 @@ export class ChatService {
 
       // Make the prediction call
       const result = await client.predict("/predict", {
-        message: message
+        question: message
       });
 
       // Extract the response from the result
