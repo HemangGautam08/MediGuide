@@ -1,0 +1,135 @@
+.model-dropdown {
+  position: relative;
+  min-width: 180px;
+}
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #f9fafb;
+}
+
+.selected-model {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.model-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+/* Fallback dot */
+.default-dot {
+  background-color: #9ca3af;
+}
+
+.model-name {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.logo-icon1 {
+  width: 19px;
+  height: 19px;
+  color: rgb(30, 31, 9);
+}
+
+.chevron-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #6b7280;
+  transition: transform 0.2s;
+}
+
+.chevron-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 0.25rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 50;
+  overflow: hidden;
+}
+
+.dropdown-items {
+  padding: 0.25rem 0;
+}
+
+.dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: white;
+  transition: background-color 0.15s;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f9fafb;
+}
+
+.dropdown-item.active {
+  background-color: #eff6ff;
+  border-right: 2px solid #3b82f6;
+}
+
+.model-info {
+  flex: 1;
+  text-align: left;
+}
+
+.model-title {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.model-description {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.model-provider {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Example color classes (you can extend as needed): */
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+.bg-green-500 {
+  background-color: #22c55e;
+}
+.bg-emerald-500 {
+  background-color: #10b981;
+}
+.bg-red-500 {
+  background-color: #ef4444;
+}
