@@ -3,8 +3,8 @@ import { AI_MODELS } from './models/models'; // assuming models are imported her
 
 // Gradio endpoints for different models
 const GRADIO_ENDPOINTS = {
-  'mistralai': 'https://902582614614ec4586.gradio.live',
-  'deepseekai': 'https://078386c1ae983520fa.gradio.live'
+  'mistralai': 'https://0dd18ce39c044771f0.gradio.live',
+  'deepseekai': 'https://238c228c7fd5fbe0b1.gradio.live'
 };
 
 export class ChatService {
