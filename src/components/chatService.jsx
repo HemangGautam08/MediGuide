@@ -14,14 +14,11 @@ export class ChatService {
     try {
       // Connect to the Gradio client
       const client = await Client.connect(endpoint);
-      
-      console.log(message, model);
       // Make the prediction call
       const result = await client.predict("/predict", {
         message: message
       });
 
-      console.log(result);
       // Extract the response from the result
       if (result && result.data) {
         // Handle different response formats
@@ -36,7 +33,6 @@ export class ChatService {
         }
         return JSON.stringify(result.data);
       }
-      console.log("No response received from the model");
       return 'No response received from the model';
 
     } catch (error) {
