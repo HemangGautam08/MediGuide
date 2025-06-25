@@ -1,12 +1,26 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🩺 MediGuide: Your AI Medical Assistant
 
-Currently, two official plugins are available:
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**MediGuide** is an intelligent medical chatbot powered by a fine-tuned **Mistral-7B-Instruct-v0.3** model. Trained on a custom medical dataset, it delivers trustworthy, context-aware, and conversational medical insights.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Demo Preview](demo/demo.gif)
+
+
+> ⚠️ **Disclaimer:** MediGuide is intended for informational and research purposes only. It is not a substitute for professional medical advice.
+
+---
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ankraj1234/MediGuide.git
+cd mediGuide
+
+# Install dependencies and start development server
+npm install
+npm run dev
