@@ -1,10 +1,10 @@
 import { Client } from "@gradio/client";
-import { AI_MODELS } from './models/models'; // assuming models are imported here if needed
 
 // Gradio endpoints for different models
 const GRADIO_ENDPOINTS = {
-  'mistralai': 'https://0dd18ce39c044771f0.gradio.live',
-  'deepseekai': 'https://238c228c7fd5fbe0b1.gradio.live'
+  'mistralai_prompt': 'https://0dd18ce39c044771f0.gradio.live',
+  'mistralai_prefix': 'https://238c228c7fd5fbe0b1.gradio.live',
+  'mistralai_qlora': 'https://238c228c7fd5fbe0b1.gradio.live',
 };
 
 export class ChatService {

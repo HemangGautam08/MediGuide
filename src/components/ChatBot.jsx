@@ -19,7 +19,7 @@ export const ChatBot = () => {
         model: 'mistral'
       }
     ],
-    selectedModel: 'mistralai',
+    selectedModel: 'mistralai_prompt',
     isLoading: false,
     error: null
   });

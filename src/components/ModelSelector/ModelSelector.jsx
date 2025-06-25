@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, Cpu, Zap } from 'lucide-react';
+import { ChevronDown, Cpu, Zap, Brain} from 'lucide-react';
 import { AI_MODELS } from '../models/models';
 import './ModelSelector.css';
 
@@ -13,7 +13,9 @@ export const ModelSelector = ({
 
   const getModelIcon = (modelId) => {
     switch (modelId) {
-      case 'mistralai': return <Zap className="logo-icon1" />;
+      case 'mistralai_prompt': return <Zap className="logo-icon1" />;
+      case 'mistralai_prefix': return <Brain className="logo-icon1" />;
+      case 'mistralai_qlora': return <Cpu className="logo-icon1" />;
       default: return <Cpu className="logo-icon1" />;
     }
   };
