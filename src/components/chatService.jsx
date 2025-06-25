@@ -2,9 +2,9 @@ import { Client } from "@gradio/client";
 
 // Gradio endpoints for different models
 const GRADIO_ENDPOINTS = {
-  'mistralai_prompt': 'https://0dd18ce39c044771f0.gradio.live',
-  'mistralai_prefix': 'https://238c228c7fd5fbe0b1.gradio.live',
-  'mistralai_qlora': 'https://238c228c7fd5fbe0b1.gradio.live',
+  'mistralai_prompt': 'https://d9b6ec1eb15e39f318.gradio.live',
+  'mistralai_prefix': 'https://13b6b5feadc45ec9eb.gradio.live',
+  'mistralai_qlora': 'https://c6d388c408204dbbbd.gradio.live',
 };
 
 export class ChatService {
@@ -14,12 +14,14 @@ export class ChatService {
     try {
       // Connect to the Gradio client
       const client = await Client.connect(endpoint);
-
+      
+      console.log(message, model);
       // Make the prediction call
       const result = await client.predict("/predict", {
-        question: message
+        message: message
       });
 
+      console.log(result);
       // Extract the response from the result
       if (result && result.data) {
         // Handle different response formats
@@ -34,7 +36,7 @@ export class ChatService {
         }
         return JSON.stringify(result.data);
       }
-
+      console.log("No response received from the model");
       return 'No response received from the model';
 
     } catch (error) {
