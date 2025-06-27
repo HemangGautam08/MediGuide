@@ -83,6 +83,8 @@ Model was trained on medical instruction datasets, and evaluated on response qua
 - **Test**: [`Mohammed-Altaf/medical-instruction-120k`](https://huggingface.co/datasets/Mohammed-Altaf/medical-instruction-120k)
 - **Size**: ~1,000 examples
 
+---
+
 ## 4. Comparative Score Summary
 
 | Metric                 | QLoRA              | Prompt Tuning               | Prefix Tuning               |
